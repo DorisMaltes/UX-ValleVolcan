@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+/* App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  color: black;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-logo {
+  height: 80px; 
+  padding-right: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar button {
+  border: none;
+  background:none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  color: #389eff;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 50px;
+  padding-top: 100px;
+  /*background-color: aqua;*/
+  box-sizing: border-box;
+}
+
+
+.svg-background {
+  position: relative;
+}
+
+.svg-background::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('data:image/svg+xml;utf8,<svg width="732" height="523" viewBox="0 0 732 523" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M121 442.796C71.337 445.016 45.1945 466.756 0 522.796V129.296C28.0039 94.1314 58.3295 82.207 145 78.2956C178.726 72.15 192.5 21.7956 227.5 6.29557C262.5 -9.20447 732 8.79557 732 8.79557V249.296C719.116 287.612 705.62 308.62 671 345.296C607.65 391.283 578.988 402.223 535 406.296C491.012 410.369 443.32 382.26 419.5 390.796C394.76 395.392 386.006 404.456 372.5 423.296C350.113 471.979 329.922 484.946 281.5 484.796C216 500.296 154.471 438.135 121 442.796Z" fill="%23EEF9FF"/></svg>');
+  background-repeat: no-repeat;
+  background-size: cover; /* or use 'contain' depending on your needs */
+  z-index: -1;
+}
+
+/* Make sure the content of your navbar and sections is positioned above the SVG */
+.navbar, .section {
+  position: relative;
+  z-index: 1;
 }

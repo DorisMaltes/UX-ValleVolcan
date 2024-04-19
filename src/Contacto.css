@@ -1,0 +1,50 @@
+/* Contacto.css */
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background: #EEF9FF; /* Or your chosen background color */
+  }
+  
+  .contact-info-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Adjust width as necessary */
+  }
+  
+  .contact-form-container {
+    /* Adjust width as necessary */
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .contact-form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #23395B; /* Match this to your button color */
+    color: white;
+    cursor: pointer;
+  }
+  
+  .social-icons {
+    /* Style your social media icons here */
+  }
+  
+  /* Additional media queries and styling as needed */
+  

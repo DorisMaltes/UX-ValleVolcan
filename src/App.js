@@ -1,23 +1,47 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import logo from './assets/logoValle.png';
+
+import Servicios from './Servicios';
+import Certificacion from './Certificacion';
+import Contacto from './contacto';
+import Proceso from './proceso';
+import Home from './Home';
+import Footer from './Footer';
 
 function App() {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <section className="svg-background">
+        <nav className="navbar">
+          <img src={logo} alt="Logotipo" className="navbar-logo" />
+          <button onClick={() => scrollToSection('home')}>Home</button>
+          <button onClick={() => scrollToSection('proceso')}>Proceso de purificación</button>
+          <button onClick={() => scrollToSection('certificacion')}>Certificación</button>
+          <button onClick={() => scrollToSection('servicios')}>Productos y Servicios</button>
+          <button onClick={() => scrollToSection('contacto')}>Contacto</button>
+        </nav> 
+          <Home/>
+          <Proceso/>
+      </section>
+
+      <section className="svg-background">
+        
+      </section>
+
+      <Certificacion />
+      <Servicios />
+      <Contacto/>
+      
+      <Footer />
+      
     </div>
   );
 }

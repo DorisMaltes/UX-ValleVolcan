@@ -1,0 +1,124 @@
+#servicios {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EEF9FF;
+  }
+
+.paddingxd{
+    padding-bottom: 40px;
+}
+  
+  /* Estilos para el carrusel */
+  .testimonial {
+    
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    width: 90%;
+    height: 300px;
+    border-radius: 30px;
+
+    
+
+  }
+  .carruselLOL{
+    background-color: white;
+    border-radius: 30px;
+    width: 90%;
+    height: 300px;
+    box-shadow: -2px -2px 20px 0px rgba(0,0,0,0.13);
+
+  }
+  
+  /* Flechas personalizadas del carrusel */
+  .slick-prev, .slick-next {
+    color: #000;
+    cursor: pointer;
+    font-size: 30px;
+    z-index: 1;
+  }
+  
+  .slick-prev {
+    left: -35px;
+  }
+  
+  .slick-next {
+    right: -35px;
+  }
+  
+  /* Botones de navegación (puntos) */
+  .slick-dots li button:before {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.75);
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: black;
+  }
+  
+  /* Ajustes para las tarjetas de testimonio */
+  .testimonial h3 {
+    margin: 0;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .testimonial p {
+    margin: 10px 0 0;
+    color: #666;
+  }
+  
+  /* Estilos para la imagen del testimonio */
+  .testimonial img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+    width: 80px; /* Ajusta este valor según el tamaño deseado */
+    height: 80px; /* Ajusta este valor según el tamaño deseado */
+    object-fit: cover;
+  }
+  
+/*PRUEBA DE CARD BONITA*/
+.delivery-card{
+    display: flex;
+    padding: 20px;
+    height: 100%;
+}
+
+.delivery-info{
+
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: left;
+}
+.delivery-details{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.detail{
+    padding-top: 10px;
+}
+.delivery-image{
+
+    align-self: center;
+    display: flex;    
+}
+
+.delivery-image img{
+    height: 200px;
+    width: 200px;
+}
+
+.delivery-info h2:nth-child(1){
+
+font-family: 'Poppins';
+font-weight: 400;
+}
+  
+  /* Asegúrate de ajustar los tamaños y los márgenes para que se ajusten a tu diseño */
+  

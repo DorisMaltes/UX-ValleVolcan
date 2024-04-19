@@ -1,0 +1,45 @@
+/* Home.css */
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+    
+  }
+
+.hero-content {
+    max-width: 50%;
+    font-size: 50px;
+    padding-left: 50px;
+    
+  }
+
+  .hero-content p:nth-child(2) {
+    color: #389eff;
+    font-weight: 600;
+  font-style: normal;
+}
+.hero-content p:nth-child(1) {
+    color: black;
+    font-weight: 600;
+  font-style: normal;
+}
+.hero-content p:nth-child(3) {
+    padding-top: 20px;
+    font-size:medium;
+}
+
+  
+.hero-image {
+    max-width: 50%;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+/* esto es para la animacion estilo que el garrafon esta flotando xd */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }

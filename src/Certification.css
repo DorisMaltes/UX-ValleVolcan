@@ -1,0 +1,49 @@
+/* Certificacion.css */
+.certification-section {
+    text-align: center;
+    padding: 50px;
+    background: #EEF9FF; /* o cualquier otro color que prefieras */
+  }
+  
+  .certification-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .certification-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+  }
+  
+  .certification-ribbon {
+    animation: swing 3s infinite ease-in-out;
+  }
+  
+  .score-circle {
+    width: 100px;
+    height: 100px;
+    background-color: black; /* Cambia esto según tu diseño */
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .score-details {
+    text-align: left;
+  }
+  
+  @keyframes swing {
+    0% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+  }
+  
+  /* Ajusta los estilos y añade media queries según sea necesario */
+  
